@@ -2,7 +2,7 @@ import dva from 'dva';
 import { message } from 'antd'
 import createLoading from 'dva-loading'
 import './index.css';
-
+import './assets/stylesheet/css/style.css'
 
 // 1. Initialize
 const app = dva({

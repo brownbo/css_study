@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import styles from './index.css'
+import styles from './index.css';
+import './test.scss';
+
 class Index extends Component {
     constructor(props) {
         super(props)
@@ -27,7 +29,7 @@ class Index extends Component {
     render() {
       
         return (
-           <div className={styles.test}>
+           <div className="name">
             你是我把爸爸
            </div>   
         )

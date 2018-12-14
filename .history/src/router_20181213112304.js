@@ -6,7 +6,6 @@ import {Router, Route} from 'dva/router';
 //App
 
 import Index from './containers/Index/Index';
-import app from './containers/app';
 import Template from './containers/Template/Index';
 /*404page*/
 import Error from './containers/error';
@@ -14,14 +13,9 @@ import Error from './containers/error';
 
 const routerMenu = [
   {
-    path:'/index',
-    breadcrumbName:'首页1',
-    component:Index,
-  },
-  {
   path:'/',
   breadcrumbName:'首页',
-  component:app,
+  component:Index,
   child:[{
     path:'/test',
     breadcrumbName:'首页',
@@ -32,8 +26,7 @@ const routerMenu = [
     component:Error,
   }
 ]
-},
-];
+},];
 //生成路由
 const createRounte = (router,history)=>{
   const getRoute = (item)=>{

@@ -5,35 +5,26 @@ import {Router, Route} from 'dva/router';
 /**component**/
 //App
 
-import Index from './containers/Index/Index';
-import app from './containers/app';
-import Template from './containers/Template/Index';
+import Index from './containers/Index/Index'
+import Template from './containers/Template/Index'
 /*404page*/
-import Error from './containers/error';
+import Error from './containers/error'
 
 
 const routerMenu = [
   {
-    path:'/index',
-    breadcrumbName:'首页1',
-    component:Index,
-  },
-  {
   path:'/',
   breadcrumbName:'首页',
-  component:app,
-  child:[{
-    path:'/test',
-    breadcrumbName:'首页',
-    component:Template,
-  },{
-    path:'*',
-    breadcrumbName:'',
-    component:Error,
-  }
-]
-},
-];
+  component:Index,
+},{
+  path:'/test',
+  breadcrumbName:'首页',
+  component:Template,
+},{
+  path:'*',
+  breadcrumbName:'',
+  component:Error,
+}];
 //生成路由
 const createRounte = (router,history)=>{
   const getRoute = (item)=>{

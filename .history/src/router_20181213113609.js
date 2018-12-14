@@ -14,11 +14,6 @@ import Error from './containers/error';
 
 const routerMenu = [
   {
-    path:'/index',
-    breadcrumbName:'首页1',
-    component:Index,
-  },
-  {
   path:'/',
   breadcrumbName:'首页',
   component:app,
@@ -33,7 +28,11 @@ const routerMenu = [
   }
 ]
 },
-];
+{
+  path:'/index',
+  breadcrumbName:'首页1',
+  component:Index,
+}];
 //生成路由
 const createRounte = (router,history)=>{
   const getRoute = (item)=>{

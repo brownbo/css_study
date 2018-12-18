@@ -16,19 +16,19 @@ export default {
     },
   },
   sass:{},
-  proxy: {
-    "/api": {
-      "target": "http://192.168.31.47:3001",//
-      "changeOrigin": true,
-    },
-    "/admin": {
-      "target": "http://192.168.31.47:3001",
-      "changeOrigin": true,
-    },
-    "/static": {
-      "target": "http://192.168.31.47:3001",
-      "changeOrigin": true,
-    },
-  },
+  // proxy: {
+  //   "/api": {
+  //     "target": "http://192.168.31.47:3001",//
+  //     "changeOrigin": true,
+  //   },
+  //   "/admin": {
+  //     "target": "http://192.168.31.47:3001",
+  //     "changeOrigin": true,
+  //   },
+  //   "/static": {
+  //     "target": "http://192.168.31.47:3001",
+  //     "changeOrigin": true,
+  //   },
+  // },
   "disableCSSModules": true
 }
